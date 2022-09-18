@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bar">
+            <section class="bar__section bar__shapes">
+                <label class="bar__tittle">Shapes</label>
+                <ul class="bar__fields">
+                    <li class="bar__field tool" id="Rectangle">
+                        <img class="bar__icon" src="icons/rectangle.svg" alt="">
+                        <span class="bar__name">Rectangle</span>
+                    </li>
+                    <li class="bar__field tool" id="Circle">
+                        <img class="bar__icon" src="icons/circle.svg" alt="">
+                        <span class="bar__name">Circle</span>
+                    </li>
+                    <li class="bar__field tool" id="Triangle">
+                        <img class="bar__icon" src="icons/triangle.svg" alt="">
+                        <span class="bar__name">Triangle</span>
+                    </li>
+                    <li class="bar__field tool" id="Line">
+                        <svg height="10" width="20">
+                            <line class="line" x1="0" y1="5" x2="20px" y2="5" style="stroke:rgb(0,0,0);stroke-width:3" />
+                            </svg>
+                        <span class="bar__name">Line</span>
+                    </li>
+                    <li class="bar__field">
+                        <input id="fill-color" class="bar__checkbox" type="checkbox">
+                        <label class="bar__checkbox-label" for="fill-color"></label>
+                       
+                        <span id="fill-label" class="bar__name">Fill Shape</span>
+                    </li>
+                </ul>
+               
+            </section>
+            <section class="bar__section bar__options">
+                <label class="bar__tittle">Options</label>
+                <ul class="bar__fields">
+                    <li class="bar__field --active tool" id="Brush">
+                        <img class="bar__icon" src="icons/brush.svg" alt="">
+                        <span class="bar__name">Brush</span>
+                    </li>
+                    <li class="bar__field tool" id="Eraser">
+                        <img class="bar__icon" src="icons/eraser.svg" alt="">
+                        <span class="bar__name">Eraser</span>
+                    </li>
+    
+                    <li class="bar__shapes-field">
+                       <input value="5" class="bar__input" min="1" max="100"  type="range" id="">
+                    </li>
+                </ul>
+               
+
+            </section>
+            <section class="bar__section bar__colors">
+                <label class="bar__tittle">Color</label>
+                <ul class="bar__fields">
+                    <li class="bar__field">
+                        <input type="color" id="color-picker" value="#4a98f7">
+                    </li>
+                    <li class="bar__field --selected">
+                    </li>
+                    <li class="bar__field">
+                    </li>
+                    <li class="bar__field">
+                    </li>
+                    <li class="bar__field">
+                    </li>
+                </ul>
+               
+            </section>
+            <section class="bar__section bar__buttons">
+                <button class="bar__button bar__button-clear">Clear Canvas</button>
+                <button class="bar__button bar__button-save">Save as Image</button>
+            </section>
+        </div>
+        <div class="board">
+            <canvas></canvas>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+@use '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#f3d068;
+
+}
+
+.container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: minmax(225px, 225px) 800px;
+
+    @media screen and (max-width: 1040px) {
+        grid-template-columns: 800px;
+        grid-template-rows: 80px 605px ;
+      }
+}
+
