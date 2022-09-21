@@ -1,4 +1,4 @@
-# Weather APP
+# Paint APP
 
 ![Design preview for Paint APP](./icons/desktop-board.png)
 ![Design preview for Paint App](./icons/tablet-board.png)
